@@ -1,9 +1,9 @@
-import { Shield, MapPin, MessageCircle, Star } from "lucide-react";
+import { FaShieldAlt, FaMapMarkerAlt, FaWhatsapp, FaStar } from "react-icons/fa";
 
 const REASONS = [
-  { icon: MapPin, title: "Presence physique en Chine", desc: "Bureau local pour verifier chaque fournisseur avant achat." },
-  { icon: MessageCircle, title: "Suivi WeChat / WhatsApp", desc: "Communication directe et transparente a chaque etape." },
-  { icon: Shield, title: "Paiements securises", desc: "Contrats clairs, paiement progressif et securise." },
+  { icon: FaMapMarkerAlt, title: "Presence physique en Chine", desc: "Bureau local pour verifier chaque fournisseur avant achat." },
+  { icon: FaWhatsapp, title: "Suivi WeChat / WhatsApp", desc: "Communication directe et transparente a chaque etape." },
+  { icon: FaShieldAlt, title: "Paiements securises", desc: "Contrats clairs, paiement progressif et securise." },
 ];
 
 const STATS = [
@@ -53,7 +53,7 @@ export default function TrustSection() {
         <div className="mt-16 max-w-3xl mx-auto bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-8 text-center">
           <div className="flex justify-center gap-1 mb-4">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-5 h-5 fill-brand-yellow text-brand-yellow" />
+              <FaStar key={i} className="w-5 h-5 text-brand-yellow" />
             ))}
           </div>
           <p className="text-lg italic text-white/80 mb-4">

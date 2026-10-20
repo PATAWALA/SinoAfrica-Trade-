@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Search, ShieldCheck, Ship } from "lucide-react";
+import { FaSearch, FaShieldAlt, FaShip } from "react-icons/fa";
 import { getWhatsAppLink } from "@/lib/constants";
 
 const STEPS = [
-  { icon: Search, title: "1. Recherche fournisseur", desc: "Identification et verification des usines en Chine." },
-  { icon: ShieldCheck, title: "2. Controle qualite", desc: "Inspection en usine avant expedition." },
-  { icon: Ship, title: "3. Expedition Fret", desc: "Livraison Air/Mer securisee vers le Gabon." },
+  { icon: FaSearch, title: "1. Recherche fournisseur", desc: "Identification et verification des usines en Chine." },
+  { icon: FaShieldAlt, title: "2. Controle qualite", desc: "Inspection en usine avant expedition." },
+  { icon: FaShip, title: "3. Expedition Fret", desc: "Livraison Air/Mer securisee vers le Gabon." },
 ];
 
 export default function SourcingSection() {

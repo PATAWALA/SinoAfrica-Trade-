@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { MessageCircle, X } from "lucide-react";
+import { FaWhatsapp, FaTimes } from "react-icons/fa";
 import { getWhatsAppLink, WHATSAPP_DISPLAY } from "@/lib/constants";
 
 export default function WhatsAppWidget() {
@@ -75,7 +75,7 @@ export default function WhatsAppWidget() {
             className="absolute -top-2 -right-2 bg-slate-200 hover:bg-slate-300 rounded-full p-0.5"
             aria-label="Fermer"
           >
-            <X size={12} />
+            <FaTimes size={12} />
           </button>
           Besoin d'un devis ? Ecrivez-nous.
         </div>
@@ -89,7 +89,7 @@ export default function WhatsAppWidget() {
         className="relative bg-[#25D366] hover:bg-[#1ebe5d] text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110"
         aria-label="Contacter sur WhatsApp"
       >
-        <MessageCircle size={30} fill="white" />
+        <FaWhatsapp size={30} />
         {!isOpen && (
           <span className="absolute top-0 right-0 w-4 h-4 bg-brand-red rounded-full border-2 border-white animate-pulse" />
         )}

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Fuel, Users, ArrowRight } from "lucide-react";
+import { FaGasPump, FaUsers, FaArrowRight } from "react-icons/fa";
 import { getWhatsAppLink } from "@/lib/constants";
 import { VEHICLES, FILTERS } from "@/data/vehicles";
 
@@ -62,11 +62,11 @@ export default function AutoSection() {
                 <p className="text-xs text-slate-500 mb-3">{v.type}</p>
                 <div className="flex items-center gap-3 text-xs text-slate-500 mb-4">
                   <span className="flex items-center gap-1">
-                    <Users className="w-3 h-3" />
+                    <FaUsers className="w-3 h-3" />
                     {v.seats}
                   </span>
                   <span className="flex items-center gap-1">
-                    <Fuel className="w-3 h-3" />
+                    <FaGasPump className="w-3 h-3" />
                     {v.fuel}
                   </span>
                 </div>
@@ -78,7 +78,7 @@ export default function AutoSection() {
                     rel="noopener noreferrer"
                     className="bg-brand-red hover:bg-red-700 text-white text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-1 transition-colors"
                   >
-                    Devis <ArrowRight className="w-3 h-3" />
+                    Devis <FaArrowRight className="w-3 h-3" />
                   </a>
                 </div>
               </div>

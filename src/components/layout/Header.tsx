@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { FaBars, FaTimes, FaWhatsapp } from "react-icons/fa";
 import { POLES, getWhatsAppLink, COMPANY } from "@/lib/constants";
 
 export default function Header() {
@@ -42,7 +42,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 bg-brand-red hover:bg-red-700 text-white font-semibold px-6 py-2.5 rounded-full transition-all hover:scale-105 shadow-md shadow-brand-red/20"
           >
-            <MessageCircle className="w-4 h-4" />
+            <FaWhatsapp className="w-4 h-4" />
             Demander une cotation
           </a>
 
@@ -51,7 +51,7 @@ export default function Header() {
             className="lg:hidden text-slate-600 p-2"
             aria-label="Menu"
           >
-            {open ? <X size={24} /> : <Menu size={24} />}
+            {open ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
       </div>
@@ -73,7 +73,7 @@ export default function Header() {
             target="_blank"
             className="flex items-center justify-center gap-2 bg-brand-red text-white font-semibold px-5 py-3 rounded-full mt-3"
           >
-            <MessageCircle className="w-4 h-4" />
+            <FaWhatsapp className="w-4 h-4" />
             Demander une cotation
           </a>
         </div>

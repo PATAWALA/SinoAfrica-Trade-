@@ -1,4 +1,4 @@
-import { GraduationCap, Plane, Home, ArrowRight } from "lucide-react";
+import { FaGraduationCap, FaPlane, FaHome, FaArrowRight } from "react-icons/fa";
 import { getWhatsAppLink } from "@/lib/constants";
 
 const PROGRAMS = [
@@ -9,9 +9,9 @@ const PROGRAMS = [
 ];
 
 const SERVICES = [
-  { icon: GraduationCap, label: "Bourses & inscriptions" },
-  { icon: Plane, label: "Visa & voyage" },
-  { icon: Home, label: "Accueil en Chine" },
+  { icon: FaGraduationCap, label: "Bourses & inscriptions" },
+  { icon: FaPlane, label: "Visa & voyage" },
+  { icon: FaHome, label: "Accueil en Chine" },
 ];
 
 export default function StudiesSection() {
@@ -46,7 +46,7 @@ export default function StudiesSection() {
               className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1 border border-slate-100"
             >
               <div className="w-10 h-10 rounded-xl bg-brand-blue/10 flex items-center justify-center mb-4">
-                <GraduationCap className="w-5 h-5 text-brand-blue" />
+                <FaGraduationCap className="w-5 h-5 text-brand-blue" />
               </div>
               <h3 className="font-bold text-brand-dark mb-1">{p.title}</h3>
               <p className="text-xs text-slate-500 mb-1">{p.uni}</p>
@@ -57,7 +57,7 @@ export default function StudiesSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-sm font-semibold text-brand-blue hover:text-brand-red transition-colors"
               >
-                En savoir plus <ArrowRight className="w-3 h-3" />
+                En savoir plus <FaArrowRight className="w-3 h-3" />
               </a>
             </div>
           ))}
@@ -71,7 +71,7 @@ export default function StudiesSection() {
             className="inline-flex items-center gap-2 bg-brand-red hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-brand-red/20 transition-all hover:scale-105"
           >
             Reserver ma session d'accompagnement
-            <ArrowRight className="w-4 h-4" />
+            <FaArrowRight className="w-4 h-4" />
           </a>
         </div>
       </div>

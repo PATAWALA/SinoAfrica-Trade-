@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
+import { FaArrowRight, FaShieldAlt, FaStar } from "react-icons/fa";
 import { getWhatsAppLink, type PoleId } from "@/lib/constants";
 
 const TABS: { id: PoleId; label: string; placeholder: string; message: string }[] = [
@@ -43,7 +43,7 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-4 py-1.5 text-sm mb-8 shadow-sm">
-            <Sparkles className="w-4 h-4 text-brand-yellow" />
+            <FaStar className="w-4 h-4 text-brand-yellow" />
             <span className="text-slate-700 font-medium">
               Accompagnement certifie Chine-Gabon - plus de 12K abonnes
             </span>
@@ -91,12 +91,12 @@ export default function Hero() {
               className="bg-brand-red hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-xl transition-all flex items-center justify-center gap-2 whitespace-nowrap"
             >
               Obtenir mon devis
-              <ArrowRight className="w-4 h-4" />
+              <FaArrowRight className="w-4 h-4" />
             </button>
           </form>
 
           <div className="flex items-center justify-center gap-2 mt-6 text-sm text-slate-500">
-            <ShieldCheck className="w-4 h-4 text-brand-green" />
+            <FaShieldAlt className="w-4 h-4 text-brand-green" />
             <span>Reponse sous 24h - Presence physique en Chine et au Gabon</span>
           </div>
         </div>

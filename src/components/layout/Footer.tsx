@@ -1,4 +1,9 @@
-import { MessageCircle, Mail, MapPin, Instagram } from "lucide-react";
+import {
+  FaWhatsapp,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaInstagram,
+} from "react-icons/fa";
 import { getWhatsAppLink, POLES, COMPANY, WHATSAPP_DISPLAY } from "@/lib/constants";
 
 export default function Footer() {
@@ -21,7 +26,7 @@ export default function Footer() {
               Votre passerelle directe vers la Chine pour l'automobile, le sourcing et les etudes. Entre le Gabon et la Chine.
             </p>
             <div className="flex items-center gap-2 text-sm text-slate-400">
-              <MapPin className="w-4 h-4 text-brand-green" />
+              <FaMapMarkerAlt className="w-4 h-4 text-brand-green" />
               {COMPANY.zones.join(" - ")}
             </div>
           </div>
@@ -49,7 +54,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-brand-green transition-colors"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <FaWhatsapp className="w-4 h-4" />
                   {WHATSAPP_DISPLAY}
                 </a>
               </li>
@@ -58,7 +63,7 @@ export default function Footer() {
                   href={`mailto:${COMPANY.email}`}
                   className="flex items-center gap-2 hover:text-brand-yellow transition-colors"
                 >
-                  <Mail className="w-4 h-4" />
+                  <FaEnvelope className="w-4 h-4" />
                   {COMPANY.email}
                 </a>
               </li>
@@ -69,7 +74,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-brand-yellow transition-colors"
                 >
-                  <Instagram className="w-4 h-4" />
+                  <FaInstagram className="w-4 h-4" />
                   {COMPANY.tiktok}
                 </a>
               </li>
